@@ -1,0 +1,41 @@
+#video-background-1{
+    position: absolute;   /* Rola com a página */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    
+    
+}
+
+.Menu{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 22px;
+    
+}
+.Menu:hover{
+    transform: translateY(-2px) scale(1.06);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.30); 
+    z-index: -1;
+}

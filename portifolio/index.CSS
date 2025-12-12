@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'Paper Noise';
+  src: url('Font/Paper Noise.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('Font/Cocogoose-Pro-Bold-trial.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Ghrathe';
+  src: url('Font/Ghrathe.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Birds of Paradise';
+  src: url('Font/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf') format('opentype');
+}
+
+#video-background-1{
+    position: absolute;   /* Rola com a página */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    
+    
+}
+
+#video-background-2{
+    position: absolute;   /* Rola com a página */
+    top: 100vh;           /* Começa onde o primeiro termina */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    
+}
+#video-background-3{
+    position: absolute;   /* Rola com a página */
+    top: 200vh;           /* Começa onde o segundo termina */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 300vh;
+    background: rgba(0, 0, 0, 0.30); 
+    z-index: -1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+.Foto_oculos{
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    width: 460px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+    
+}
+.Foto_oculos:hover{
+    transform: translateY(-2px) scale(1.06);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000;
+    
+}
+.Foto_boa{
+    position: absolute;
+    top: 1100px;
+    left: 1240px;
+    width: 460px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+}
+.Foto_boa:hover{
+    transform: translateY(-2px) scale(1.06);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000;
+    
+}
+
+
+
+.Nav_Menu{
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    z-index: 2;
+    display: flex;
+    gap: 100px;
+    font-size: 135%;
+    
+
+}
+.Nav_Menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.Menu_Link{
+    background-color: transparent; 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+    font-family: Ghrathe, sans-serif;
+    letter-spacing: 1px;
+}
+.Menu_Link:hover{
+    transform: translateY(-2px) scale(1.06);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000;
+    
+}
+
+.Menu_Link_Materias{
+    background-color: transparent; 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+    font-family: 'Paper Noise', sans-serif;
+    
+}
+.Menu_Link_Materias:hover{
+    transform: translateY(-2px) scale(1.06);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000;
+    
+}
+
+.Menu_portifolios{
+    background-color: transparent; 
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 22px;
+    
+}
+.Menu_portifolios:hover{
+    transform: translateY(-2px) scale(1.06);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #000;
+    
+}
+    
+
+.Quem_sou_eu{
+    position: absolute;
+    top: 150px;
+    right: 510px;
+    font-size: 48px;
+    color: #fff;
+    font-family: 'Cocogoose', sans-serif;
+    z-index: 2;
+    text-shadow: #000 1px 1px 25px;
+}
+.Texto_Sobre_Mim{
+    position: absolute;
+    top: 260px;
+    right: 180px;
+    width: 680px;
+    font-size: 22px;
+    color: #fff;
+    font-family: Cocogoose, sans-serif;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    line-height: 32px;
+}
+.Meu_Nome{
+    position: absolute;
+    bottom: 120px;
+    left: 175px;
+    font-size: 45px;
+    color: #fff;
+    font-family: 'Cocogoose', sans-serif;
+    z-index: 2;
+    text-shadow: #000 1px 1px 25px;
+    
+}
+
+.Idade{
+    position: absolute;
+    bottom: 70px;
+    left: 180px;
+    font-size: 45px;
+    color: #fff;
+    font-family: Ghrathe, sans-serif;
+    z-index: 2;
+    text-shadow: #000 1px 1px 25px;
+    
+    
+
+}
+.Barrinha{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10000px;
+    height: 8px;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.Barrinha2{
+    position: absolute;
+    top: 1890px;
+    left: 0px;
+    width: 10000px;
+    height: 8px;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.Meu_Memorial{
+    position: absolute;
+    top: 1070px;
+    left: 200px;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Birds of Paradise', sans-serif;
+    z-index: 2;
+    text-shadow: #000 1px 1px 25px;
+}
+
+.Texto_Memorial{
+    position: absolute;
+    top: 1200px;
+    left: 180px;
+    width: 680px;
+    font-size: 22px;
+    color: #fff;
+    font-family: Cocogoose, sans-serif;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    line-height: 32px;
+}
+
+.Objetivos{
+    position: absolute;
+    top: 2000px;
+    left: 250px;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Ghrathe', sans-serif;
+    z-index: 2;
+    text-shadow: #000 1px 1px 25px;
+}
+.Texto_Objetivos{
+    position: absolute;
+    top: 2130px;
+    left: 160px;
+    width: 400px;
+    font-size: 22px;
+    color: #fff;
+    font-family: Cocogoose, sans-serif;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    line-height: 32px;
+}
+
+.Interesses{
+    position: absolute;
+    top: 2000px;
+    left: 1350px;
+    font-size: 70px;
+    color: #fff;
+    font-family: 'Ghrathe', sans-serif;
+    z-index: 2;
+    text-shadow: #000 1px 1px 25px;
+}
+
+.Texto_Interesses{
+    position: absolute;
+    top: 2130px;
+    left: 1280px;
+    width: 400px;
+    font-size: 22px;
+    color: #fff;
+    font-family: Cocogoose, sans-serif;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    line-height: 32px;
+}
+
+.Will {
+    display: block;
+    position: absolute;
+    top: 2250px;
+    left: 143px;
+    height: 300px;
+    width: 1600px;
+    color: #fff;
+    z-index: 2;
+}
+    
+
+
+/* Bloquear scroll em p�ginas que n�o s�o index.html */
+body.no-scroll {
+    overflow: hidden !important;
+
+}
