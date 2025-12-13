@@ -1,0 +1,24 @@
+#video-background-1{
+    position: absolute;   /* Rola com a página */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    
+    
+}
+
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.30); 
+    z-index: -1;
+}
